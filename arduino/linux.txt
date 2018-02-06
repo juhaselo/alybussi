@@ -1,0 +1,127 @@
+    1  sudo nano /boot/config.txt
+    2  sudo nano config.txt
+    3  sudo nano /boot/config.txt
+    4  sudo apt-get update && sudo apt-get install arduino
+    5  ls
+    6  sudo apt-get install python-serial
+    7  ls /dev/tty*
+    8  Sudo apt-get install arduino
+    9  sudo
+   10  wget https://raw.githubusercontent.com/tbird20d/grabserial/master/grabserial grabserial
+   11  python grabserial
+   12  sudo apt-get install python-serial
+   13  sudo pip install pyserial
+   14  ls /dev/tty*
+   15  import serial
+   16  sudo apt-get install nginx
+   17  sudo /etc/init.d/nginx start
+   18  ls
+   19  cd ..
+   20  ls
+   21  cd ..
+   22  la
+   23  ls
+   24  cd var
+   25  ls
+   26  cd www
+   27  ls
+   28  cd html
+   29  ls
+   30  sudo chmod -R 777
+   31  sudo chmod -R 777 /var/www/html
+   32  ls
+   33  cd alybussi-master
+   34  ls
+   35  cd Downloads
+   36  ls
+   37  tar  -xvzf arduino-1.8.5-linux64.tar.xz
+   38  ls
+   39  cd ..
+   40  ls
+   41  python testi.py
+   42  python testi2.py
+   43  ls
+   44  python testi2.py
+   45  clear
+   46  python testi2.py
+   47  clear
+   48  python testi2.py
+   49  import serial
+   50  ls
+   51  python konsoli.py
+   52  testi.py
+   53  python testi.py
+   54  python konsoli.py
+   55  python testi.py
+   56  ls
+   57  cd ..
+   58  ls
+   59  cd ..
+   60  ls
+   61  cd arduino-1.8.1 
+   62  cd arduino
+   63  ls
+   64  python testi2.py
+   65  python testi.py
+   66  ls /dev/tty*
+   67  python3 testi.py
+   68  python3 testi2.pyc
+   69  python testi.py
+   70  python3 testi.py
+   71  pip3
+   72  pip3 install serial
+   73  python3 testi.py
+   74  ls
+   75  rm *.pyc
+   76  python3 testi.py
+   77  ls
+   78  python3 testi.py
+   79  ls
+   80  ls -la s*
+   81  cd serial
+   82  ls
+   83  ls -la
+   84  ls -la s*
+   85  ls
+   86  cd sketchbook/
+   87  ls
+   88  mv serial serial_moved
+   89  ls
+   90  cd ..
+   91  python3 testi.py
+   92  pip3 uninstall serial
+   93  pip3 install pySerial
+   94  python3 testi.py
+   95  ls /dev/tty*
+   96  ls
+   97  python3 testi.py
+   98  sudo apt-get install dfu-programmer dfu-util
+   99  sudo apt-get install dfu-programmer
+  100  sudo dfu-programmer at90usb82 erase
+  101  ls
+  102  python3 testi2.py
+  103  npm install jquery
+  104  ls
+  105  pwd
+  106  pip3 install pyautogui
+  107  pip3 install Xlib
+  108  ls
+  109  python3 testi2.py
+  110  ls
+  111  python3 testi2.py
+  112  ls
+  113  python3 testi2.py
+  114  pip install pyautogui
+  115  pip3 install python3-xlib
+  116  sudo apt-get install scrot
+  117  sudo apt-get install python3-tk
+  118  sudo apt-get install python3-dev
+  119  pip3 install pyautogui
+  120  ls
+  121  python3 testi2.py
+  122  pip3 install pyautogui
+  123  pip install Pillow
+  124  sudo pip3 install pyautogui
+  125  sudo pip3 install pyuserinput
+  126  history
+  127  history > linux.txt

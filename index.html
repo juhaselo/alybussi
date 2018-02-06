@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+  <!-- BOOTSTRAP 4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+  <!-- OMA CSS & GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+  <title>SOHJOA</title>
+  <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+
+<body class="modal-open" style="padding-right: 0px;">
+
+  <!-- YLÄPALKKI & TIEDOITTEET -->
+
+  <div class="ylapalkki">
+    <div class="row" id="yla">
+      <!-- <div class="klopic" id="klo1"><img src="images/klo1.png" height="80px"></div> -->
+      <div id="klo"></div>
+      <div id="date">
+        <div id="weekday"></div>
+        <div id="fulldate"></div>
+      </div>
+      <!-- <div class="klopic" id="klo2"><img src="images/klo2.png" height="80px"></div> -->
+    </div>
+
+    <div class="row tied">
+      <div class="col uvirta" id="uvirta"></div>
+    </div>
+  </div>
+
+  <!-- <img src="images/naytonsaastaja.png" id="naytons" alt="mainos"> -->
+
+
+  <!-- KARTTA -->
+
+  <div class="row" id="map"></div>
+  <input type="button" value="Visualise bus GPS" id="gpsbtn">
+
+
+  <!-- NAPIT -->
+
+  <div class="napit" align="center">
+
+    <!-- HSL -->
+    <button id="nappi1" type="button" class="btn nappi-margin hsl" data-toggle="modal" data-target="#hsl1"> <img src="images/hsl.png" id="hsllogo">
+      </button>
+
+    <div class="modal fade" id="hsl1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body hslmodal" align="left">
+            <h1 id="busHead"></h1><br>
+            <div id="busText"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PALVELUT -->
+    <button id="nappi2" type="button" class="btn nappi-margin palvelut" data-toggle="modal" data-target="#palv">
+        <img src="images/palvelut.png" id="pallogo">
+        <p id="palvelut"></p>
+      </button>
+
+    <div class="modal fade" id="palv" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content palvcontent">
+          <div class="modal-body palvmodal" align="left">
+            <h1 id="servicesHead"></h1><br>
+            <div id="servicesText">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INFO -->
+    <button id="nappi3" type="button" class="btn nappi-margin" data-toggle="modal" data-target="#info1"><img src="images/info.png" id="infologo">
+        <p id="info"></p>
+        </button>
+
+    <div class="modal fade" id="info1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body infomodal">
+            <img src="images/logo.png" class="logo" width="550px">
+            <p id="sohjoahanke"></p>
+            <p id="sohjoa1" align="left"></p>
+            <p id="sohjoa2" align="left"></p>
+            <br />
+            <img src="images/qrcode.png" width="250px" class="qr">
+            <img src="images/6aika.png" width="250px" class="kuusaika">
+            <img src="images/metropolia2.png" width="400px" class="metrop">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- KIELI -->
+    <div class="nappi-margin" id="langbtn">
+      <img src="" id="langlogo">
+      <p id="lang"></p>
+    </div>
+  </div>
+
+  <footer class="mainos row">
+    <iframe width="1080" id="video" class="ytvideo" height="605" src="" frameborder="0"></iframe>
+  </footer>
+
+  <!-- BOOTSTRAP 4 -->
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+  <!--GOOGLE MAPS-->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsKit0QXl6tApOMluYh8do3jaKrwfyUxs&libraries=places&language=fi&region=FI"></script>
+  <script src="https://www.google-analytics.com/urchin.js"></script>
+
+  <!-- JQUERY-MARQUEE, MOMENTS, OMA SKRIPTI -->
+  <script src='https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js'></script>
+  <script src="moment-with-locales.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+
+</html>

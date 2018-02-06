@@ -1,0 +1,483 @@
+/* VÄRIT
+
+Mustanharmaa (taustat): #191919
+Vaaleanharmaa (tiedoitetausta): #d3d3d3
+Violetti (aksenttiväri): #7470BC
+
+
+/* BODY & CONTAINER */
+
+body {
+  margin: auto;
+  height: 100vh !important;
+  width: 100% !important;
+  position: relative;
+  font-family: "Nunito";
+  overflow: hidden;
+}
+
+
+
+
+
+
+/* YLÄBANNERI, KELLO & TIEDOITTEET */
+
+.ylapalkki {
+  height: 220px;
+  width: 100%;
+  z-index: 100 !important;
+  position: relative;
+}
+
+#yla {
+  height: 170px;
+  background-color: #191919;
+  color: #fff;
+}
+
+#klo {
+  margin-top: -25px !important;
+  font-family: "Segoe UI";
+  font-size: 110px;
+  font-weight: 500;
+  text-shadow: none;
+  letter-spacing: 6px;
+  color: #fff;
+}
+
+#klo,
+#date {
+  width: 100%;
+  text-align: center;
+}
+
+#date {
+  font-family: "Nunito";
+  font-size: 25px;
+  letter-spacing: 1px;
+  margin-top: -25px !important;
+}
+
+#weekday {
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  color: #7470BC;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+#fulldate,
+#weekday {
+  display: inline;
+}
+
+.klopic {
+  padding-top: 2.5em;
+}
+
+#klo1 {
+  margin-left: auto;
+  margin-right: -16em;
+}
+
+#klo2 {
+  margin-right: auto;
+  margin-left: -16em;
+}
+
+.tied {
+  height: 55px;
+  /* background-color: #d3d3d3; */
+  box-shadow: 0 12px 30px -4px rgba(43, 43, 43, 0.4);
+  letter-spacing: 2px;
+  padding-top: 0.2em;
+  font-size: 30px;
+  background-color: #7470BC;
+  color: #fff;
+}
+
+
+
+
+
+
+/* KARTTA & NÄYTÖNSÄÄSTÄJÄ */
+
+#naytons {
+  z-index: 10;
+  position: absolute;
+  width: 100% !important;
+  height: 1780px !important;
+}
+
+#map {
+  height: 90vh !important;
+  width: 102% !important;
+  margin-right: 0 !important;
+  position: absolute;
+  z-index: -10 !important;
+}
+
+
+
+
+
+
+/* NAPPIPALKKI */
+
+.napit {
+  width: 200px;
+  overflow: hidden;
+  float: right !important;
+  z-index: 10;
+  margin-right: -0.9em !important;
+}
+
+.nappi-margin {
+  margin: 100px 0 0 30px;
+  background-color: #191919;
+  color: #fff;
+  padding: 1.5em 0 0 0.2em;
+  border-radius: 40px 0px 0px 40px;
+  height: 180px !important;
+  width: 180px;
+  margin-bottom: 2em;
+  box-shadow: 5px 5px 30px 5px rgba(43, 43, 43, 1);
+
+}
+
+button {
+  color: #fff !important;
+}
+
+.nappi-margin > p {
+  margin-top: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+
+#hsllogo {
+  height: 130px;
+  margin-top: -25px;
+}
+
+#langlogo {
+  width: 110px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+#pallogo,
+#infologo {
+  height: 90px;
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+
+
+
+
+
+/* MODAL TYYLIT */
+
+.modal.fade .modal-dialog {
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -webkit-transition: none !important;
+  transition: none !important;
+  -moz-transform: none !important;
+  -ms-transform: none !important;
+  -o-transform: none !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+}
+
+.fade {
+  -webkit-transition: opacity 0.5s linear;
+  -moz-transition: opacity 0.5s linear;
+  -ms-transition: opacity 0.5s linear;
+  -o-transition: opacity 0.5s linear;
+  transition: opacity 0.5s linear;
+}
+
+.modal-content {
+  background-color: #191919 !important;
+  color: #fff;
+  padding: 1em;
+}
+
+#kutsu1,
+#info1 {
+  margin-top: 300px;
+}
+
+p {
+
+  font-size: 25px;
+  letter-spacing: 0.7px;
+}
+
+*,
+::after,
+::before {
+  box-sizing: none;
+}
+
+.modal-open {
+  padding-right: 0px !important;
+
+}
+
+
+
+
+
+
+
+/* HSL & PALVELUT */
+
+#hsl1,
+#palv {
+  margin-top: 50px;
+}
+
+.stop {
+  padding: 10px 20px 10px 20px;
+}
+
+.service {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#busHead,
+.stop-title,
+#servicesHead {
+  color: #7470BC;
+  font-weight: bold;
+}
+
+#busHead,
+#servicesHead {
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-size: 50px;
+  text-align: center;
+}
+
+#servicesHead {
+  letter-spacing: 4px;
+  margin-bottom: -20px !important;
+}
+
+.service-title {
+  color: #A9A6E9;
+  font-size: 30px;
+  display: inline-block;
+  padding-top: 40px;
+  width: 500px;
+}
+
+.stop-title,
+.service-title {
+  letter-spacing: 2px;
+}
+
+.palvcontent {
+  padding-left: 40px;
+}
+
+#busHead,
+#busText {
+  white-space: pre-wrap;
+}
+
+#busText {
+  color: #fff;
+  font-size: 30px;
+}
+
+#busHead {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 10px;
+  letter-spacing: 1.5px;
+  vertical-align: top;
+  font-size: 25px;
+}
+
+.is-open {
+  font-size: 23px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-left: 30px;
+  font-weight: 600;
+}
+
+.service-address {
+  margin-top: -5px !important;
+}
+
+.opening-hours-list {
+  display: block;
+  letter-spacing: 2px;
+}
+
+#servicesText {
+  padding-bottom: 20px;
+}
+
+.services-info {
+  height: 200px;
+  padding-bottom: 50px;
+}
+
+.qrcode {
+  float: left;
+  display: inline-block;
+  width: 100px;
+  margin: 50px 50px 0 0;
+  padding-bottom: 40px;
+}
+
+
+/* INFO */
+
+#info1 {
+  margin-top: 50px;
+}
+
+.infomodal {
+  padding: 40px 20px 40px 20px;
+}
+
+.logo {
+  margin: auto !important;
+  padding-bottom: 30px;
+}
+
+#sohjoa1,
+#sohjoa2 {
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+#sohjoa1,
+#sohjoa2 {
+  display: inline !important;
+  float: left
+}
+
+#sohjoa2 {
+  padding-bottom: 50px;
+}
+
+.qr {
+  float: left;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  width: 250px;
+  height: 250px;
+}
+
+.metrop,
+.kuusaika {
+  float: right;
+  padding-right: 30px;
+}
+
+.metrop {
+  padding-top: 50px;
+}
+
+.kuusaika {
+  margin-bottom: -30px;
+  padding-top: 50px;
+}
+
+
+
+
+
+
+
+/* BOOTSTRAP NAPIT */
+
+.btn,
+.btn:hover {
+  background-color: #191919;
+  border: none;
+}
+
+.btn:focus,
+.btn:active {
+  background-color: #191919 !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+
+/*INFO WINDOW*/
+
+.gm-style-iw {
+  top: 15px !important;
+  left: 31px !important;
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
+  border: 1px solid rgba(72, 181, 233, 0.6);
+  border-radius: 5px 5px 5px 5px;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+}
+
+
+
+/* MAINOSLAATIKKO */
+
+footer {
+  height: 320px;
+  min-width: 1080px !important;
+  position: absolute;
+  bottom: 0;
+  background-color: #7470BC;
+  margin: auto !important;
+  overflow: hidden;
+  box-shadow: 0px -12px 30px -4px rgba(43, 43, 43, 0.4);
+  z-index: -1;
+}
+
+.ytvideo {
+  pointer-events: none;
+}
+
+
+
+
+#gpsbtn {
+  color: #fff;
+  background-color: #7470BC;
+  height: 70px;
+  width: 300px;
+  border-radius: 0 0 20px 20px;
+  font-size: 23px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-top: 10px;
+}
+
+#gpsbtn:focus,
+#gpsbtn:active {
+  border: none !important;
+  outline: none !important;
+}

@@ -1,0 +1,5 @@
+py -m pip install pyuserinput
+
+py -m pip install pypiwin32
+
+py -m pip install pySerial
